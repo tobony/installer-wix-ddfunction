@@ -12,6 +12,10 @@ EndProject
 Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "SETUP_ddFunctionXLL", "ExcelAddInBundle\SETUP_ddFunctionXLL.wixproj", "{32CD7165-0E3E-4728-8090-A865DA4F4402}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeploySource", "DeploySource", "{3600C288-BB5B-44EC-A2E0-DFEDBD300E43}"
+	ProjectSection(SolutionItems) = preProject
+		DeploySource\ddFunction32.xll = DeploySource\ddFunction32.xll
+		DeploySource\ddFunction64.xll = DeploySource\ddFunction64.xll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
