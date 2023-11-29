@@ -1,5 +1,5 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal">
-  <Bundle Name="ExcelAddInBundle" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="a8232bfc-a6ce-4fec-bb1b-512acf92c528" >
+  <Bundle Name="ddFunctionXLL" Manufacturer="theangkko" Version="1.0.0.0" UpgradeCode="7301c1ff-6794-420a-a872-8073f4adc03e" >
     <!--Name="..." Version="..." Manufacturer="..." UpgradeCode="..." Copyright="..." IconSourceFile="..." AboutUrl="...">-->
 
     <BootstrapperApplication>
@@ -7,7 +7,7 @@
     </BootstrapperApplication>
 
     <Chain>
-      <MsiPackage SourceFile="ExcelAddInDeploy.msi" />
+      <MsiPackage SourceFile="ExcelAddinMSIpackage.msi" />
     </Chain>
 
   </Bundle>

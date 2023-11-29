@@ -14,7 +14,7 @@
   </ItemGroup>  
 
   <ItemGroup>
-    <PackageReference Include="WixToolset.Dtf.CustomAction" Version="4.0.0" />
+    <PackageReference Include="WixToolset.Dtf.CustomAction" Version="4.0.2" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,7 +1,7 @@
 ﻿
 <!-- TODO 1/5: Set these two values (make a new Guid for the ProductUpgradeCode)  -->
 <?define ProductVersion = "1.0.1"?>
-<?define ProductUpgradeCode = "{697DC734-59CD-43DB-BD0B-959CB783527F}"?>
+<?define ProductUpgradeCode = "{89f626f6-13c8-4640-bec4-ed0c590c0b5e}"?>
 
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:netfx="http://wixtoolset.org/schemas/v4/wxs/netfx" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
   <Package Name="!(loc.ProductName)" Language="!(loc.LANG)" Version="$(var.ProductVersion)" Manufacturer="!(loc.ProductManufacturer)" UpgradeCode="$(var.ProductUpgradeCode)" InstallerVersion="200" Scope="perUser"><SummaryInformation Manufacturer="!(loc.ProductManufacturer)" Description="!(loc.ProductDescription)" />
@@ -97,20 +97,20 @@
     -->
     <ComponentGroup Id="XLLDistributables">
       <!-- TODO 2/5: Make a new Guid for the Component  -->
-      <Component Id="XLL32" Guid="{2CC3F937-28C6-4D97-B335-F5724DC782E7}" Directory="AddinFolder">
+      <Component Id="XLL32" Guid="{89f626f6-13c8-4640-bec4-ed0c590c0b5e}" Directory="AddinFolder">
         <RegistryValue Root="HKCU" Key="Software\!(loc.ProductManufacturer)\!(loc.ProductNameNoSpace)" Name="Xll32Bit" Value="AddIns" KeyPath="yes" Type="string" />
 
         <!-- TODO 3/5: Set the Source path to the 32-bit xll location -->
-        <File Id="EXCELXLL32PACKED.XLL" Name="!(loc.ProductNameNoSpace)32.xll" Source="C:\Work\GitHub\govert\Test-WiXInstaller\Source\Test\bin\Debug\net472\publish\Test-AddIn-packed.xll">
+        <File Id="EXCELXLL32PACKED.XLL" Name="!(loc.ProductNameNoSpace)32.xll" Source="D:\repo\ddFunction_xll_xlw_DEV\wixinstaller\Source\DeploySource\ddFunction32-packed.xll">
           <netfx:NativeImage Id="ngen_32Xll" Platform="32bit" Priority="0" />
         </File>
       </Component>
       <!-- TODO 4/5: Make a new Guid for the Component  -->
-      <Component Id="XLL64" Guid="{B3E718B0-ED91-4E4C-B1B3-4F651C2CBB97}" Directory="AddinFolder">
+      <Component Id="XLL64" Guid="{cf817478-ac1a-443c-9a9a-888836e4a45c}" Directory="AddinFolder">
         <RegistryValue Root="HKCU" Key="Software\!(loc.ProductManufacturer)\!(loc.ProductNameNoSpace)" Name="Xll64Bit" Value="AddIns" KeyPath="yes" Type="string" />
         
         <!-- TODO 5/5: Set the Source path to the 32-bit xll location -->
-        <File Id="EXCELXLL64PACKED.XLL" Name="!(loc.ProductNameNoSpace)64.xll" Source="C:\Work\GitHub\govert\Test-WiXInstaller\Source\Test\bin\Debug\net472\publish\Test-AddIn64-packed.xll">
+        <File Id="EXCELXLL64PACKED.XLL" Name="!(loc.ProductNameNoSpace)64.xll" Source="D:\repo\ddFunction_xll_xlw_DEV\wixinstaller\Source\DeploySource\ddFunction64-packed.xll">
           <netfx:NativeImage Id="ngen_64Xll" Platform="64bit" Priority="0" />
         </File>
         

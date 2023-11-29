@@ -2,14 +2,17 @@
   <PropertyGroup>
     <OutputType>Bundle</OutputType>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutputPath>..\setup_pack\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Content Include="Resources\EULA.rtf" />
     <Content Include="Resources\Icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="WixToolset.Bal.wixext" Version="4.0.0" />
+    <PackageReference Include="WixToolset.Bal.wixext" Version="4.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExcelAddInDeploy\ExcelAddInDeploy.wixproj" />
+    <ProjectReference Include="..\ExcelAddInDeploy\ExcelAddinMSIpackage.wixproj" />
   </ItemGroup>
 </Project>
