@@ -1,5 +1,5 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal">
-  <Bundle Name="ddFunctionXLL" Manufacturer="theangkko" Version="1.0.0.0" UpgradeCode="7301c1ff-6794-420a-a872-8073f4adc03e" >
+  <Bundle Name="ddFunctionXLL" Manufacturer="BRBRSOFT" Version="1.0.1.0" UpgradeCode="7301c1ff-6794-420a-a872-8073f4adc03e" >
     <!--Name="..." Version="..." Manufacturer="..." UpgradeCode="..." Copyright="..." IconSourceFile="..." AboutUrl="...">-->
 
     <BootstrapperApplication>

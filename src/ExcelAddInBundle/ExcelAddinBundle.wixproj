@@ -1,6 +1,7 @@
-﻿<Project Sdk="WixToolset.Sdk/4.0.0">
+﻿<Project Sdk="WixToolset.Sdk/5.0.1">
   <PropertyGroup>
     <OutputType>Bundle</OutputType>
+    <OutputName>ExcelAddin ddFunction</OutputName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutputPath>..\setup_pack\</OutputPath>
@@ -10,7 +11,7 @@
     <Content Include="Resources\Icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="WixToolset.Bal.wixext" Version="4.0.2" />
+    <PackageReference Include="WixToolset.Bal.wixext" Version="5.0.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ExcelAddInDeploy\ExcelAddinMSIpackage.wixproj" />

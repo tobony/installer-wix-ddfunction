@@ -2,10 +2,10 @@
   <String Id="LANG" Value="1033" />
   <String Id="ProductName" Value="ddFunctionXLL" />
   <String Id="ProductNameNoSpace" Value="ddFunction" />
-  <String Id="ProductDescription" Value="Installer for ddFunction Excel Add-In" />
-  <String Id="ProductManufacturer" Value="theangkko" />
-  <String Id="ProductVersion" Value="1" />
-  <String Id="ProductCopyright" Value="(c) 2023 theangkko" />
+  <String Id="ProductDescription" Value="Installer for ddFunction ExcelAddin" />
+  <String Id="ProductManufacturer" Value="BRBRSOFT" />
+  <String Id="ProductVersion" Value="1.0.0.0" />
+  <String Id="ProductCopyright" Value="(c) 2023 BRBRSOFT" />
   <String Id="ProductUninstallDescription" Value="Uninstall !(loc.ProductName)" />
   <String Id="AppName" Value="!(loc.ProductName)" />
 </WixLocalization>
